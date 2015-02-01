@@ -36,7 +36,7 @@ class CrawlData:
                 #soup = BeautifulSoup(source)
                 a_tree = lh.fromstring(source)
                 #:not(.class) is not supported
-                bple_list = list(map(lambda x:x.text_content(), a_tree.cssselect(':not(.others) > .reply > dl > dd.userText > a:nth-of-type(1)')))
+                bple_list = list(map(lambda x:x.text_content(), a_tree.cssselect('.reply:not(.others) > dl > dd.userText > a:nth-of-type(1)')))
             except:
                 pass
             finally:
