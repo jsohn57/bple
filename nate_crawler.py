@@ -10,6 +10,28 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 
+
+class Site:
+    def __init__(self, name, url, category_list):
+        self.name = name
+        self.url = url
+        self.category_list = category_list
+
+class Category:
+    def __init__(self, name, article_list)
+        self.name = name
+        self.article_list = article_list
+
+class Article:
+    def __init__(self, title, url, bple_list):
+        self.title = title
+        self.url = url
+        self.bple_list = bple_list
+
+class Bple:
+    def __init__(self, contents):
+        self.contents = contents
+
 class CrawlData:
     def __init__(self):
         self.title_to_url = OrderedDict()
